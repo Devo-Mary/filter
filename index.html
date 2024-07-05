@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        .container{
+            text-align: center;
+        }
+        table{
+            margin: auto;
+            width: 500px;
+        }
+        button{
+            width: 122px;
+            margin-top: 2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="button-group">
+            <button onclick="button_group(this)" id="all">All</button>
+            <button onclick="button_group(this)">681.20</button>
+            <button onclick="button_group(this)">683.20</button>
+            <button onclick="button_group(this)">685.20</button>
+        </div><br>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Ad</th>
+                    <th>Soyad</th>
+                    <th>Qrup</th>
+                </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+        </table>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
